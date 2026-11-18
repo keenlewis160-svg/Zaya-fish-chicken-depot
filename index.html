@@ -1,0 +1,168 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>ZAYA Fish & Chicken Depot</title>
+<meta name="description" content="Fresh fish, chicken, eggs and more at ZAYA Fish & Chicken Depot. Contact us for prices.">
+
+<style>
+*{box-sizing:border-box;margin:0;padding:0;scroll-behavior:smooth}
+body{font-family:Arial,sans-serif;background:#fffdf5;color:#252525}
+header{background:#ffd21c;padding:18px 6%;display:flex;justify-content:space-between;align-items:center;flex-wrap:wrap;gap:15px;border-bottom:5px solid #d71920}
+.logo{font-size:30px;font-weight:900;color:#d71920}
+.logo small{display:block;font-size:11px;letter-spacing:3px;color:#222}
+nav{display:flex;gap:18px;flex-wrap:wrap}
+nav a{text-decoration:none;color:#222;font-weight:bold}
+.hero{min-height:440px;background:linear-gradient(90deg,#000b,#0003),url('https://images.unsplash.com/photo-1515003197210-e0cd7184f8b5?w=1400') center/cover;display:flex;align-items:center;padding:60px 8%;color:white}
+.hero-content{max-width:600px}
+.hero h1{font-size:clamp(40px,7vw,68px);line-height:1.1;margin-bottom:20px}
+.hero h1 span{color:#ffd21c}
+.hero p{font-size:18px;line-height:1.7;margin-bottom:25px}
+.btn{display:inline-block;background:#d71920;color:white;padding:13px 22px;text-decoration:none;border-radius:6px;font-weight:bold}
+.btn:hover{background:#a90000}
+.section{padding:60px 7%}
+.heading{text-align:center;margin-bottom:35px}
+.heading h2{font-size:34px;color:#d71920;margin-bottom:10px}
+.heading p{color:#666;line-height:1.7}
+.products{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:25px}
+.product{background:white;border-radius:12px;overflow:hidden;box-shadow:0 4px 15px #0002;transition:.2s}
+.product:hover{transform:translateY(-5px)}
+.product img{width:100%;height:200px;object-fit:cover;display:block;background:#eee}
+.info{text-align:center;padding:20px}
+.info h3{font-size:20px;margin-bottom:10px}
+.price{color:#d71920;font-weight:bold;margin-bottom:16px}
+.info .btn{font-size:14px}
+.about{background:#fff0ae;text-align:center}
+.about h2,.contact h2{font-size:32px;color:#d71920;margin-bottom:15px}
+.about p{max-width:750px;margin:auto;line-height:1.8;font-size:17px}
+.contact{text-align:center}
+.contact p{margin:15px 0 25px;color:#555;line-height:1.7}
+footer{background:#222;color:white;text-align:center;padding:30px 15px}
+footer strong{color:#ffd21c}
+footer p{margin:9px}
+@media(max-width:600px){
+header{justify-content:center;text-align:center}
+nav{justify-content:center;gap:13px}
+.hero{min-height:390px;padding:40px 6%}
+.section{padding:45px 5%}
+}
+</style>
+</head>
+<body>
+
+<header>
+<div class="logo">ZAYA<small>FISH & CHICKEN DEPOT</small></div>
+<nav>
+<a href="#home">Home</a>
+<a href="#products">Products</a>
+<a href="#about">About</a>
+<a href="#contact">Contact</a>
+</nav>
+</header>
+
+<section class="hero" id="home">
+<div class="hero-content">
+<h1>Freshness You <span>Can Trust.</span></h1>
+<p>Welcome to ZAYA Fish & Chicken Depot. Your trusted destination for fresh fish, chicken, eggs and quality products.</p>
+<a href="#products" class="btn">Explore Our Products</a>
+</div>
+</section>
+
+<section class="section" id="products">
+<div class="heading">
+<h2>Our Fresh Products</h2>
+<p>Quality products for your home and business.</p>
+<p>Contact us to enquire about current prices.</p>
+</div>
+
+<div class="products">
+
+<div class="product">
+<img src="https://images.unsplash.com/photo-1510130387422-82bed34b37e9?w=600" alt="Fresh fish">
+<div class="info"><h3>Fresh Fish</h3><p class="price">Contact for Price</p><a class="btn order" href="#contact" data-product="Fresh Fish">Enquire Now</a></div>
+</div>
+
+<div class="product">
+<img src="https://images.unsplash.com/photo-1587593810167-a849e4bfc9e8?w=600" alt="Whole chicken">
+<div class="info"><h3>Whole Chicken</h3><p class="price">Contact for Price</p><a class="btn order" href="#contact" data-product="Whole Chicken">Enquire Now</a></div>
+</div>
+
+<div class="product">
+<img src="https://images.unsplash.com/photo-1604503468506-a8da13d82791?w=600" alt="Chicken breasts">
+<div class="info"><h3>Chicken Breasts</h3><p class="price">Contact for Price</p><a class="btn order" href="#contact" data-product="Chicken Breasts">Enquire Now</a></div>
+</div>
+
+<div class="product">
+<img src="https://images.unsplash.com/photo-1626082927389-6cd097cdc6ec?w=600" alt="Drumsticks">
+<div class="info"><h3>Drumsticks</h3><p class="price">Contact for Price</p><a class="btn order" href="#contact" data-product="Drumsticks">Enquire Now</a></div>
+</div>
+
+<div class="product">
+<img src="https://images.unsplash.com/photo-1587593810167-a849e4bfc9e8?w=600" alt="Chicken gizzards">
+<div class="info"><h3>Gizzards</h3><p class="price">Contact for Price</p><a class="btn order" href="#contact" data-product="Gizzards">Enquire Now</a></div>
+</div>
+
+<div class="product">
+<img src="https://images.unsplash.com/photo-1506976785307-8732e854ad03?w=600" alt="Fresh eggs">
+<div class="info"><h3>Eggs</h3><p class="price">Contact for Price</p><a class="btn order" href="#contact" data-product="Eggs">Enquire Now</a></div>
+</div>
+
+<div class="product">
+<img src="https://images.unsplash.com/photo-1599084993091-1cb5c0721cc6?w=600" alt="Omena dried fish">
+<div class="info"><h3>Omena</h3><p class="price">Contact for Price</p><a class="btn order" href="#contact" data-product="Omena">Enquire Now</a></div>
+</div>
+
+<div class="product">
+<img src="https://images.unsplash.com/photo-1604503468506-a8da13d82791?w=600" alt="Chicken necks">
+<div class="info"><h3>Chicken Necks</h3><p class="price">Contact for Price</p><a class="btn order" href="#contact" data-product="Chicken Necks">Enquire Now</a></div>
+</div>
+
+<div class="product">
+<img src="https://images.unsplash.com/photo-1604503468506-a8da13d82791?w=600" alt="Chicken thighs">
+<div class="info"><h3>Chicken Thighs</h3><p class="price">Contact for Price</p><a class="btn order" href="#contact" data-product="Chicken Thighs">Enquire Now</a></div>
+</div>
+
+</div>
+</section>
+
+<section class="section about" id="about">
+<h2>About ZAYA</h2>
+<p>Welcome to ZAYA Fish & Chicken Depot. We offer a selection of fresh fish, chicken products, eggs and omena. Our goal is to serve our customers with quality products and reliable service. Contact us today to enquire about availability and prices.</p>
+</section>
+
+<section class="section contact" id="contact">
+<h2>Contact ZAYA</h2>
+<p>Want to know our prices or check product availability?<br>Get in touch with us today!</p>
+<a class="btn" id="whatsapp" href="#" target="_blank">Contact Us on WhatsApp</a>
+</section>
+
+<footer>
+<strong>ZAYA FISH & CHICKEN DEPOT</strong>
+<p>Freshness You Can Trust.</p>
+<p>Fresh products. Quality you can trust.</p>
+<p>&copy; 2026 ZAYA Fish & Chicken Depot. All rights reserved.</p>
+</footer>
+
+<script>
+/* Replace 254700000000 with ZAYA's WhatsApp number */
+const phone = "254700000000";
+
+document.getElementById("whatsapp").href =
+"https://wa.me/" + phone + "?text=" +
+encodeURIComponent("Hello ZAYA, I would like to enquire about your products and prices.");
+
+document.querySelectorAll(".order").forEach(button=>{
+button.addEventListener("click",function(event){
+event.preventDefault();
+const product=this.dataset.product;
+window.open("https://wa.me/"+phone+"?text="+
+encodeURIComponent("Hello ZAYA, I would like to know the price of "+product+"."),
+"_blank");
+});
+});
+</script>
+
+</body>
+</html>
